@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf8 -*-
 import re,sys
 """
 pattern = expressão regular de entrada
@@ -11,12 +13,14 @@ def preg_match(pattern,string):
 	else:
 		return result.group(0)
 
+# Exemplo de uso:
 if __name__ == '__main__':
 	string = "<a href='http://teste.com.br'>teste 123</a>"
 	# Exemplo 1
 	result = preg_match('[0-9]+',string)
 	print "Retorno exemplo 1:"
 	print result,"\n"
+	sys.exit(0)
 	# Exemplo 2
 	result = preg_match('<a href=(.*?)>(.*?)</a>',string)
 	print "Retorno exemplo 2:"
