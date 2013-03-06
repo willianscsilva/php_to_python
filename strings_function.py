@@ -1,3 +1,6 @@
+"""
+addslashes
+"""
 def addslashes(string):
 	return string.replace('"',"\\\"").replace("'","\\\'")
 
